@@ -1,0 +1,53 @@
+subjects=(SAyr10BF001
+SAyr10BF002
+SAyr10BF003
+SAyr10BF004
+SAyr10BF005
+SAyr10BF006
+SAyr10BF007
+SAyr10BF008
+SAyr10BF009
+SAyr10BF010
+SAyr10BM001
+SAyr10BM002
+SAyr10BM003
+SAyr10BM004
+SAyr10BM005
+SAyr10BM006
+SAyr10BM007
+SAyr10BM008
+SAyr10BM009
+SAyr10BM010
+SAyr10WF001
+SAyr10WF002
+SAyr10WF003
+SAyr10WF004
+SAyr10WF005
+SAyr10WF006
+SAyr10WF007
+SAyr10WF008
+SAyr10WF009
+SAyr10WF010
+SAyr10WM001
+SAyr10WM002
+SAyr10WM003
+SAyr10WM004
+SAyr10WM005
+SAyr10WM006
+SAyr10WM007
+SAyr10WM008
+SAyr10WM009
+SAyr10WM010)
+
+
+curr_dir=/Volumes/Pulkit_WD/skullTemplates/all_data/ten
+
+for name in "${subjects[@]}"
+
+do
+  echo ${name}
+  mkdir ${curr_dir}/${name}
+
+  unzip ${curr_dir}/${name}.zip -d ${curr_dir}/${name}
+
+done
