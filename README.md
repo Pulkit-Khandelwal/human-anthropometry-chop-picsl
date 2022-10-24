@@ -39,7 +39,9 @@ Lastly, we need to convert the `template_binary.nii.gz` to a dicom series using 
 
 First, read the image using `niftiread`. See documentation [here](https://www.mathworks.com/help/images/ref/niftiread.html).
 
-`V = niftiread('template_binary.nii.gz');`
+```
+V = niftiread('template_binary.nii.gz');
+```
 
 The, use the `dicomwritevolume.m` and run it as:
 ```VS = [1 1 1] % this the voxel spacing and send the correct ones for your image.
