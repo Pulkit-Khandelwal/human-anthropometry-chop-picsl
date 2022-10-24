@@ -49,11 +49,11 @@ dicomwritevolume(fname, V, VS)
 You will then have the `/path/to/some/folder/subject.zip` file which has the `dicom` series. Now, you open that file in `mimics` and then do the measurements!
 
 ## Template building
-Here, we will build the template using a bunch of `T1w` images in `1nifti` files. First, remember to normalize each of the images using the commands in `skull_norm.sh`.
+Here, we will build the template using a bunch of `T1w` images in `1nifti` files. First, remember to normalize each of the images, that are being used to build the template, using the commands in `skull_norm.sh`.
 
-https://upenn.box.com/s/5zzhfo1jjcdtttzhjap8syx865kth5m4
+- You also need to have `greedy` installed. See instrcutions and documentation [here]().
+- You also need some bianaries in order to build the template. Get the binaries from this [box link](https://upenn.box.com/s/5zzhfo1jjcdtttzhjap8syx865kth5m4).
+- You need the files in the folder `template_building_files` in the GitHub repository.
 
-greedy
-https://github.com/pyushkevich/greedy/tree/master/scripts/template
 
 
