@@ -56,4 +56,11 @@ Here, we will build the template using a bunch of `T1w` images in `1nifti` files
 - You need the files in the folder `template_building_files` in the GitHub repository.
 
 
+Run the following command:
+```#export PATH="/path/to/where/you/have/the/greedy/binaries/":$PATH
+
+sh greedy_build_template.sh -p flags.json -i manifest.csv -o template_work
+```
+`template_work` is where all the logs and the final template will be stored.
+
 
