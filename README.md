@@ -32,6 +32,8 @@ c3d in.img -threshold 64 128 1 0 -o out.img
 c3d in.img -threshold 20% 40% 1 0 -o out.img
 ```
 
+Choose the `-threshold` as per your judgement by opening up the `template.nii.gz` image and then see the values above which you want to set it to foreground and the ones which you want to set as background.
+
 ## Step 5
 Lastly, we need to convert the `template_binary.nii.gz` to a dicom series using the file `dicomwritevolume.m`. We need to convert it to a dicom series because that is the only format which `Mimics` likes.
 
