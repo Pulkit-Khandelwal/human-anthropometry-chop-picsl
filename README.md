@@ -11,11 +11,21 @@
 - I had received the data from Dillan and Zach in the form of zip file as `SAyr3BF001.zip`. I take those kind of files and then apply the following steps:
 
 ## Step 1
-Unzip the downloaded zip file of the form `SAyr3BF001.zip`. See the file `unzip_all_subjects.sh`
+Unzip the downloaded zip file in the form, for example,`SAyr3BF001.zip`. See the file `unzip_all_subjects.sh`
 
 ## Step 2
 Now you will see a lot of folders within the extracted folder. And most of these folders have a lot of dicom files. We will try tp find the correct folder which hhas the `T1w` image. Use this `convert_to_nifti.sh` script which will find the folder which has the `T1w` image and will then convert the `dicom` series into a usuable `nifti` file.
 
 ## Step 3
+Once, you get one `nifti` file for each subject, then you are ready to create the template image in `nifti` format. Note that is a separate process which I will discuss in the appendix. Refer to appendix and then continue to `Step 4`. For now, let's say that the created template image is named as `template.nii.gz`.
 
 ## Step 4
+Now, we can threshold the template image using `c3d`. Refer to the documentation for more [here](http://www.itksnap.org/pmwiki/pmwiki.php?n=Convert3D.Documentation) and described here:
+
+```-thresh, -threshold: Binary thresholding
+Syntax: -thresh <u1 u2 vIn vOut>
+
+Thresholds the image, setting voxels whose intensity is in the range [u1,u2] to vIn and all other voxels to vOut. Values u1 and u2 are intensity specifications (see below). This means that you can supply values inf and -inf for u1 and u2 to construct a one-sided threshold. You can also specify u1 and u2 as percentiles.
+c3d in.img -threshold -inf 128 1 0 -o out.img
+c3d in.img -threshold 64 128 1 0 -o out.img
+c3d in.img -threshold 20% 40% 1 0 -o out.img```
