@@ -1,7 +1,7 @@
 # Human skull anthropometry project
 #### Author: Pulkit Khandelwal
 #### Lats updated: 10/24/22
-## Here, we will go through the steps for prcoessing the MRI data and getting it ready for making measurements in mimics.
+## We will go through the steps for prcoessing the MRI data and getting it ready for making measurements in mimics.
 #### Note: You can find all the files in this GitHub repository itself. Note that the files here have hard-coded directories paths and subject lists. You can change those as per your requirements.
 
 #### What do you need? Basic skills in shell scripting, ITK-SNAP.
