@@ -51,4 +51,6 @@ You will then have the `/path/to/some/folder/subject.zip` file which has the `di
 ## Template building
 Here, we will build the template using a bunch of `T1w` images in `1nifti` files. First, remember to normalize each of the images using the commands in `skull_norm.sh`.
 
+https://upenn.box.com/s/5zzhfo1jjcdtttzhjap8syx865kth5m4
+
 
