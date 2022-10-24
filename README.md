@@ -43,10 +43,9 @@ The, use the `dicomwritevolume.m` and run it as:
 fname = '/path/to/some/folder/subject.zip'
 dicomwritevolume(fname, V, VS)
 ```
-You will then have the `/path/to/some/folder/subject.zip` file which has the `dicom` series.
+You will then have the `/path/to/some/folder/subject.zip` file which has the `dicom` series. Now, you open that file in `mimics` and then do the measurements!
 
-
-
-
+## Template building
+Here, we will build the template using a bunch of `T1w` images in `1nifti` files. First, remember to normalize each of the images using the commands in `skull_norm.sh`.
 
 
