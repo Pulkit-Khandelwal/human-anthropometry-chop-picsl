@@ -53,4 +53,7 @@ Here, we will build the template using a bunch of `T1w` images in `1nifti` files
 
 https://upenn.box.com/s/5zzhfo1jjcdtttzhjap8syx865kth5m4
 
+greedy
+https://github.com/pyushkevich/greedy/tree/master/scripts/template
+
 
