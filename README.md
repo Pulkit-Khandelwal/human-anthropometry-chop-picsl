@@ -69,4 +69,7 @@ sh greedy_build_template.sh -p flags.json -i manifest.csv -o template_work
 ```
 `template_work` is where all the logs and the final template will be stored.
 
-
+References: Read the following paper to understandhow templates are generally built.
+```Unbiased diffeomorphic atlas construction for computational anatomy by
+Sarang Joshi, Brad Davis, Matthieu Jomier, Guido Gerig.
+```
