@@ -58,6 +58,7 @@ Here, we will build the template using a bunch of `T1w` images in `1nifti` files
 - You need the files in the folder `template_building_files` in the GitHub repository:
   - `manifest.csv`: here you provide the complete path to each of the inout image, and also assign a name to each image.
   - `flags.json`: here you can provide different options for the template to be built. For example. here we care about either if the template building proccess is intialized using the average of all the input image or whether a particular image actts as an intial template image.
+  - `greedy_build_template.sh` is the main template building script using the greedy tool. Go through it to understand the algorithm but you should not edit this file. Lastly, `pybatch.sh` is a file so that you can run on clusters; again you do not need to edit this file. 
 
 
 And then run the following command:
