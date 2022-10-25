@@ -55,10 +55,12 @@ Here, we will build the template using a bunch of `T1w` images in `1nifti` files
 
 - You also need to have `greedy` installed. See instrcutions and documentation [here]().
 - You also need some bianaries in order to build the template. Get the binaries from this [box link](https://upenn.box.com/s/5zzhfo1jjcdtttzhjap8syx865kth5m4).
-- You need the files in the folder `template_building_files` in the GitHub repository.
+- You need the files in the folder `template_building_files` in the GitHub repository:
+  - `manifest.csv`: here you provide the complete path to each of the inout image, and also assign a name to each image.
+  - `flags.json`: here you can provide different options for the template to be built. For example. here we care about either if the template building proccess is intialized using the average of all the input image or whether a particular image actts as an intial template image.
 
 
-Run the following command:
+And then run the following command:
 ```
 #export PATH="/path/to/where/you/have/the/greedy/binaries/":$PATH
 
